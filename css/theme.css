@@ -45,10 +45,7 @@ header .header-content {
 header .header-content .header-icons a {
     color: white;
     font-size: 18px;
-}
-
-header .header-content .header-icons i {
-    margin-right: 20px;
+    margin: 0px 10px;
 }
 
 header .header-content ul {
@@ -111,31 +108,44 @@ nav .navigation-part>a img {
 }
 
 .navigation-part .outer-menu>li {
-    padding-left: 40px;
+    margin-left: 40px;
 }
 
-.navigation-part .outer-menu li a {
+.navigation-part .outer-menu li>a {
     color: black;
     font-size: 16px;
     transition: .4s;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.navigation-part .outer-menu li a img {
-    width: 10px;
+.navigation-part .outer-menu li svg {
+    width: 15px;
+    margin-left: 5px;
 }
 
 .navigation-part .outer-menu li .inner-menu {
     display: none;
 }
 
-.navigation-part .outer-menu li a:hover {
+.navigation-part .outer-menu li:hover>a{
     color: white;
+}
+
+.navigation-part .outer-menu li svg path{
+    transition: .4s;
+}
+
+.navigation-part .outer-menu li:hover svg path{
+    fill: white;
 }
 
 .navigation-part .outer-menu li:hover ul {
     display: block;
     position: absolute;
-    top: 60px;
+    top: 65px;
     background-color: white;
     border-radius: 5px;
 }
@@ -154,6 +164,10 @@ nav .navigation-part>a img {
     color: black;
 }
 
+.navigation-part li a.active {
+    color: white;
+}
+
 .navigation-part .hamburger {
     display: none;
     cursor: pointer;
@@ -168,12 +182,13 @@ nav .navigation-part>a img {
     background-position: center center;
     background-size: cover;
     width: 100%;
-    height: 700px;
+    /* height: 700px; */
     color: white;
+    padding: 20px 0px;
 }
 
 .hero .trusted-service {
-    width: 70%;
+    width: 65%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -188,7 +203,7 @@ nav .navigation-part>a img {
 }
 
 .hero .trusted-service h1 {
-    font-size: 55px;
+    font-size: 72px;
     text-transform: capitalize;
 }
 
@@ -202,8 +217,8 @@ nav .navigation-part>a img {
 
 .hero .trusted-service p {
     width: 90%;
-    font-size: 20px;
-    line-height: 30px;
+    font-size: 26px;
+    line-height: 45px;
 }
 
 .services {
@@ -214,16 +229,16 @@ nav .navigation-part>a img {
 
 .services .services-part {
     width: 100%;
-    height: 500px;
+    /* height: 480px; */
     display: flex;
     justify-content: space-between;
 }
 
 .services-part .service {
     width: 33%;
-    height: 100%;
+    /* height: 100%; */
     background-color: white;
-    top: -50px;
+    top: -70px;
     padding: 30px;
     text-align: center;
     position: relative;
@@ -245,8 +260,8 @@ nav .navigation-part>a img {
 
 .services-part .service p {
     font-size: 16px;
-    width: 90%;
-    margin: 0 auto 40px;
+    width: 95%;
+    margin: 0 auto 80px;
     line-height: 30px;
 }
 
@@ -303,16 +318,20 @@ nav .navigation-part>a img {
     font-size: 38px;
 }
 
-.waiting-assist p {
-    line-height: 30px;
-    font-size: 16px;
+.waiting-assist .item{
+    display: flex;
+    align-items: start;
 }
 
-.waiting-assist p span {
-    color: var(--main-color);
-    font-weight: bold;
-    font-size: 20px;
-    margin-right: 10px;
+.waiting-assist p {
+    line-height: 25px;
+    font-size: 18px;
+    margin-left: 10px;
+    margin-bottom: 15px;
+}
+
+.waiting-assist img{
+    width: 30px;
 }
 
 .waiting-assist a {
@@ -506,14 +525,14 @@ nav .navigation-part>a img {
 
 .latest-news .news-part {
     width: 100%;
-    height: 600px;
+    /* height: 600px; */
     display: flex;
     justify-content: space-between;
 }
 
 .news-part .news {
     width: 32%;
-    height: 100%;
+    /* height: 100%; */
     background-color: white;
     padding: 30px;
     text-align: center;
@@ -550,6 +569,7 @@ nav .navigation-part>a img {
     width: 90%;
     margin: 0 auto 40px;
     line-height: 30px;
+    margin-bottom: 70px;
 }
 
 .latest-news a {
@@ -822,25 +842,26 @@ nav .navigation-part>a img {
     top: 220px;
 }
 
-.side-fix-icon img{
+.side-fix-icon img {
     transition: .2s;
 }
 
-.side-fix-icon .prebuilds img.out, .side-fix-icon .buy img.out{
+.side-fix-icon .prebuilds img.out,
+.side-fix-icon .buy img.out {
     position: absolute;
     right: -32.5px;
     top: 7px;
 }
 
 .side-fix-icon .buy:hover img.out,
-.side-fix-icon .prebuilds:hover img.out{
-    transform:  translateX(-50px);
+.side-fix-icon .prebuilds:hover img.out {
+    transform: translateX(-50px);
     transition: .2s;
 }
 
 .side-fix-icon .buy:hover img.in,
-.side-fix-icon .prebuilds:hover img.in{
-    transform:  translateX(-50px);
+.side-fix-icon .prebuilds:hover img.in {
+    transform: translateX(-50px);
     transition: .2s;
 }
 
@@ -859,7 +880,7 @@ nav .navigation-part>a img {
 }
 
 .side-fix-icon a .go-top:hover {
-    background-color:#ffb700cb;
+    background-color: #ffb700cb;
 }
 
 footer {
@@ -883,6 +904,10 @@ footer p a:hover {
 }
 
 @media (max-width:1024px) {
+    .hero .trusted-service {
+        width: 100%;
+    }
+
     .experience .highly-experience {
         align-items: start;
     }
@@ -899,7 +924,7 @@ footer p a:hover {
         display: block;
     }
 
-    .side-fix-icon a{
+    .side-fix-icon a {
         display: none;
     }
 }
@@ -931,7 +956,7 @@ footer p a:hover {
 
     .services-part .service {
         width: 100%;
-        height: 550px;
+        /* height: 550px; */
         margin-bottom: 30px;
     }
 
@@ -952,7 +977,7 @@ footer p a:hover {
         padding-bottom: 0px;
     }
 
-    .highly-experience img {
+    .highly-experience > img {
         width: 100%;
     }
 
@@ -961,6 +986,10 @@ footer p a:hover {
         margin-bottom: 60px;
         margin-top: 40px;
     }
+
+    /* .waiting-assist img{
+        width: 30px;
+    } */
 
     /* services-continue */
     .services-continue {
@@ -1071,7 +1100,8 @@ footer p a:hover {
     }
 
     .contact .contact-info h2 {
-        margin: 0px auto;
+        margin: 0 auto;
+        text-align: center;
     }
 
     /* chat-appointment */
@@ -1109,7 +1139,8 @@ footer p a:hover {
 
     @media (max-width: 599px) {
 
-        .side-fix-icon .prebuilds, .side-fix-icon .buy{
+        .side-fix-icon .prebuilds,
+        .side-fix-icon .buy {
             display: none;
         }
     }
