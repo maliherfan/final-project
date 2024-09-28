@@ -828,7 +828,7 @@ nav .navigation-part>a img {
     border-radius: 5px;
     position: fixed;
     right: 15px;
-    top: 140px;
+    top: 130px;
     box-shadow: 0px 0px 25px 5px rgba(0, 0, 0, .2);
     cursor: pointer;
     display: flex;
@@ -839,7 +839,7 @@ nav .navigation-part>a img {
 }
 
 .side-fix-icon .buy {
-    top: 210px;
+    top: 200px;
 }
 
 .side-fix-icon img {
