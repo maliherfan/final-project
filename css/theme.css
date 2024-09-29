@@ -421,6 +421,7 @@ nav .navigation-part>a img {
 
 .service-continue:hover::before {
     transform: scale(1.06);
+    cursor: pointer;
 }
 
 .service-continue h2 {
@@ -532,7 +533,6 @@ nav .navigation-part>a img {
 
 .news-part .news {
     width: 32%;
-    /* height: 100%; */
     background-color: white;
     padding: 30px;
     text-align: center;
