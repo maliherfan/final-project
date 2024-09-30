@@ -168,7 +168,7 @@ nav .navigation-part>a img {
     color: white;
 }
 
-.navigation-part .hamburger {
+.navigation-part label {
     display: none;
     cursor: pointer;
     /* padding:35px 25px 35px 50px; */
@@ -955,13 +955,9 @@ footer p a:hover {
         display: none;
     }
 
-    .navigation-part .hamburger {
+    .navigation-part label {
         display: block;
     }
-
-    /* .navigation-part .hamburger:hover .hamburger-menu {
-        display: block;
-    } */
 
     .navigation-part input:checked + .hamburger-menu{
         display: block;
