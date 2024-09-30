@@ -171,11 +171,15 @@ nav .navigation-part>a img {
 .navigation-part .hamburger {
     display: none;
     cursor: pointer;
-    padding:35px 25px 35px 50px;
+    /* padding:35px 25px 35px 50px; */
 }
 
 .navigation-part .hamburger i {
     font-size: 30px;
+}
+
+.navigation-part input{
+    display: none;
 }
 
 .hamburger-menu{
@@ -955,7 +959,11 @@ footer p a:hover {
         display: block;
     }
 
-    .navigation-part .hamburger:hover .hamburger-menu {
+    /* .navigation-part .hamburger:hover .hamburger-menu {
+        display: block;
+    } */
+
+    .navigation-part input:checked + .hamburger-menu{
         display: block;
     }
 
